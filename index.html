@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="niewport" content="width=device-width, intial-scale=1.0">
+    <title>Forms</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo-top.png" alt="logo-top">
+    </header>
+
+    <main>
+        <div class="column">
+            <h2>Register Form</h2>
+            <div class="box">
+                <form action="#">
+                    <input type="text" placeholder="Username" name="username" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="password" placeholder="Confirm password" name="confirm-password" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <select required>
+                        <option value="" disabled selected>Your location</option>
+                        <option value="Wroclaw">Wrocław</option>
+                        <option value="Krakow">Kraków</option>
+                        <option value="Szczecin">Szczecin</option>
+                    </select>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" checked required>
+                        <p>I have read and accept the terms of use.</p>
+                    </div>
+                    <button>Sign up</button>
+                </form>
+            </div>
+            
+            <h2>Send Email</h2>
+            <div class="box">
+                <form action="#">
+                    <input type="text" placeholder="Your name" name="username" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <textarea name="message" cols="30" rows="10" placeholder="Text your message..." required></textarea>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" checked>
+                        <p>Send a copy to my Email</p>
+                    </div>
+                    <button>Send Email</button>
+                </form>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Sign In Form</h2>
+            <div class="box">
+                <form action="#">
+                    <input type="text" placeholder="Username" name="username" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <div class="button-wrapper">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox">
+                        <p>Remember me</p>
+                    </div>
+                    <button class="smallButton">Sign in</button>
+                    </div>
+                </form>
+            </div>
+
+            <h2>Recover Form</h2>
+            <div class="box">
+                <form action="#">
+                    <input type="email" placeholder="Enter your Email" name="email" required>
+                    <input type="tel" placeholder="Enter your Phone Number" name="email" required>
+                    <div class="button-wrapper">
+                    <button class="smallButton">Send</button>
+                    <button class="smallButton" disabled>Done</button>
+                    </div>
+                </form>
+            </div>
+
+            <h2>Subscribe Form</h2>
+            <div class="box">
+                <form action="#">
+                    <input type="email" placeholder="Enter your Email" name="email" required>
+                    <div class="button-wrapper">
+                        <button class="smallButton">Subscribe</button>
+                        <button  class="smallButton redButton">No, Thanks</button>
+                    </div>
+                </form>
+            </div>
+
+            <img id="logoBottom" src="images/logo-bottom.png" alt="logo-bottom">
+        </div>
+    </main>
+
+</body>
+</html>
